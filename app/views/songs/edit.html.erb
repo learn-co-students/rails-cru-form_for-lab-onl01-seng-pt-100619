@@ -1,0 +1,9 @@
+<%= form_for @song do |song| %> 
+
+    <%= song.label 'Song Name' %> 
+    <%= song.text_field :name %> <br> 
+
+    <%= song.submit "Edit Song" %> 
+
+<% end %> 
+

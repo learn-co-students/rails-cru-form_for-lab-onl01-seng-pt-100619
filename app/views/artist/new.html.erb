@@ -2,11 +2,11 @@
 
 <%= form_for @artist do |artist| %> 
     <%= artist.label 'Artist Name' </label> <br> 
-        <%= artist.text_field :Name %> <br> 
+        <%= artist.text_field :artist[name] %> <br> 
 
     <%= artist.label 'Artist Bio' %> <br> 
-        <%= artist.text_field :Bio %> <br> 
+        <%= artist.text_field :artist[bio] %> <br> 
     
-    <%= artist.submit %> 
+    <%= artist.submit "Create Artist" %> 
 
 <% end %> 
